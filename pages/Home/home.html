@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="/CSS/styles.css" />
+    <script type="module" src="./script.js" defer></script>
+    <script type="module" src="/firebase-init.js" defer></script>
+    <script type="module" src="/services/services.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body style="background-color: white">
+    <header>
+      <img src="/src/logo-fill.svg" alt="" />
+      <div>
+        <img id="profile-pic" src="" alt="" />
+        <!-- <button id="logout-btn" class="secodary-btn">Sair</button> -->
+        <i id="logout-btn" class="fa-solid fa-right-from-bracket"></i>
+        <!-- <p id="name-user"></p> -->
+      </div>
+    </header>
+    <main>
+      <input type="search" placeholder="Digite o nome do restaurante" />
+      <img class="banner" src="/src/banner.png" alt="" />
+
+      <h2>Restaurantes</h2>
+      <div id="container-restaurants"></div>
+    </main>
+
+    <menu>
+      <a href="/pages/Home/home.html">
+        <i class="fa-solid fa-house"></i>
+      </a>
+      <a href="/pages/Home/home.html">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </a>
+      <a href="/pages/Home/home.html">
+        <i class="fa-solid fa-note-sticky"></i>
+      </a>
+      <a href="/pages/Home/home.html">
+        <i class="fa-solid fa-user"></i>
+      </a>
+    </menu>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div>
+          <i id="logout-icon" class="fa-solid fa-right-from-bracket"></i>
+          <h2>Deseja sair?</h2>
+        </div>
+        <div id="box-btn-modal">
+          <button id="cancel-btn" class="modal-btn">Cancelar</button>
+          <button id="logout-btn-modal" class="modal-btn">Sair</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="boxLoader" class="boxLoader"><div class="loader"></div></div>
+  </body>
+</html>
